@@ -256,3 +256,26 @@ ul li {
     background-color: white;
     padding: 10px;
 }
+
+/* about us section */
+#about-us .container {
+    padding: 80px 40px;
+    display: flex;
+    gap: 30px;
+}
+
+#about-us .left-content {
+    width: 70%;
+
+    /* debug */
+    background-color: orange;
+    height: 500px;
+}
+
+#about-us .right-content {
+    width: 30%;
+
+    /* debug */
+    background-color: orange;
+    height: 500px;
+}
