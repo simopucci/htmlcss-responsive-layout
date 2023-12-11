@@ -279,3 +279,21 @@ ul li {
     background-color: orange;
     height: 500px;
 }
+
+/* banner section */
+#banner {
+    background-color: var(--primary-color);
+    padding: 50px 20px;
+
+    /* debug */
+    height: 80vh;
+}
+
+#banner .container {
+    width: 40%;
+    margin: 0 auto;
+    height: 100%;
+
+    /* debug */
+    background-color: orange;
+}
