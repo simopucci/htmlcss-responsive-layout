@@ -236,3 +236,23 @@ ul li {
 }
 
 /* benefits section */
+#benefits {
+    background-color: var(--primary-color);
+    padding: 30px 0;
+}
+
+#benefits h2 {
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#benefits .col {
+    border-radius: 20px;
+}
+
+#benefits .card {
+    background-color: white;
+    padding: 10px;
+}
