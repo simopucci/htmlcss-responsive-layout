@@ -183,3 +183,56 @@ ul li {
     border: none;
     background-color: #9792E4;
 }
+
+/* testimonials section */
+
+#testimonials {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    color: #9792E4;
+    margin: 20px 0;
+}
+
+#testimonials .card p {
+    padding-bottom: 20px;
+    font-size: .9rem;
+    line-height: 25px;
+    color: white;
+}
+
+#testimonials .name {
+    color: white;
+    font-weight: bold;
+}
+
+#testimonials .card {
+    height: 230px;
+    padding: 25px;
+    border-radius: 40px;
+    text-align: left;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#testimonials .card-left {
+    width: 20%;
+    height: 100%;
+    margin-right: 30px;
+    border-radius: 50%;
+    background-image: url(../img/testimonial1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#testimonials .card-right {
+    width: 80%;
+    height: 60%;
+}
+
+/* benefits section */
