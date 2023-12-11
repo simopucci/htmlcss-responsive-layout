@@ -10,3 +10,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* *GENERALS */
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    padding: 0 10px;
+}
+
+/* *HEADER */
+
+#header {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 0.8rem;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .logo > img {
+    height: 30px;
+}
+
+#header nav {
+    display: flex;
+    align-items: center;
+}
+
+#header button {
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    line-height: 20px;
+}
+
+#header nav i {
+    display: none;
+}
