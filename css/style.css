@@ -491,7 +491,7 @@ ul li {
 /* *MEDIAQUERY */
 
 /* tablet query */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
 
     /* header */
     #header nav {
@@ -543,7 +543,7 @@ ul li {
 }
 
 /* mobile query */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
 
     /* demo-app section */
     #demo-app .col,
