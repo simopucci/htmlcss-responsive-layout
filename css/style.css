@@ -1,6 +1,8 @@
 :root {
     --primary-color: #9792E4;
     --secondary-color: #0084FD;
+    --small-text: .8rem;
+    --card-title: 1.1rem;
 }
 
 /* *RESET */
@@ -21,6 +23,11 @@ body {
     width: 70%;
     margin: 0 auto;
     padding: 15px;
+}
+
+img {
+    width: 100%;
+    display: block;
 }
 
 ul {
@@ -90,15 +97,15 @@ ul li {
     line-height: 20px;
 }
 
-#header nav i {
+#header i {
     display: none;
+    font-size: 1.6rem;
 }
 
 /* *MAIN */
 
 /* demo-app section */
 #demo-app .card {
-    padding: 1rem;
     background-color: #B5DDFF;
 }
 
@@ -117,6 +124,65 @@ ul li {
 #demo-app .col:first-child .card-left, 
 #demo-app .col:first-child .card-right {
     width: 50%;
+}
+
+#demo-app .col:first-child .card-left h2 {
+    font-size: var(--card-title);
+    color: var(--secondary-color);
+    padding: 15px 0;
+}
+
+#demo-app .col:first-child .card-left p {
+    color: #506272;
+    font-size: var(--small-text);
+    font-weight: bold;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+#demo-app .col:first-child .card-left button {
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+#demo-app .col:first-child .card-right img {
+    height: 100%;
+}
+
+#demo-app .col:first-child .card-left {
+    padding: 1rem;
+    text-align: left;
+}
+
+#demo-app .col .card {
+    text-align: center;
+}
+
+#demo-app .col .card .card-logo {
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+
+#demo-app .col .card h2 {
+    font-size: var(--card-title);
+    color: var(--secondary-color);
+    padding: 10px;
+}
+
+#demo-app .col .card .card-logo {
+    padding: 1rem;
+}
+
+#demo-app .col .card p {
+    color: #506272;
+    font-size: var(--small-text);
+    font-weight: bold;
+    line-height: 20px;
+    padding: 10px;
+
 }
 
 /* planning section */
@@ -224,10 +290,13 @@ ul li {
     width: 20%;
     height: 100%;
     margin-right: 30px;
+}
+
+#testimonials .card-left img {
+    height: 100%;
+    width: 100%;
     border-radius: 50%;
-    background-image: url(../img/testimonial1.jpg);
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
 }
 
 #testimonials .card-right {
@@ -254,7 +323,35 @@ ul li {
 
 #benefits .card {
     background-color: white;
-    padding: 10px;
+    padding: 20px 20px;
+}
+
+#benefits .benefits-number {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+#benefits .benefits-title {
+    color: var(--primary-color);
+    padding: 5px 0;
+}
+
+#benefits .benefits-content {
+    font-size: var(--small-text);
+    color: #353535;
+    line-height: 20px;
+    padding: 5px 0;
+}
+
+#benefits .benefits-button {
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 30px;
+    border-radius: 15px;
+    margin: 10px 0;
 }
 
 /* about us section */
@@ -266,36 +363,108 @@ ul li {
 
 #about-us .left-content {
     width: 70%;
+}
 
-    /* debug */
-    background-color: orange;
-    height: 500px;
+#about-us .left-content h2 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+#about-us .left-content p {
+    line-height: 35px;
+    font-size: .9rem;
+    padding-bottom: 30px;
+    margin-right: 50px;
 }
 
 #about-us .right-content {
     width: 30%;
+}
 
-    /* debug */
-    background-color: orange;
-    height: 500px;
+#about-us .right-content .layer {
+    position: relative;
+}
+
+#about-us .right-content .layer i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+
+#about-us .right-content img {
+    border-radius: 50%;
+}
+
+#about-us .right-content p {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 20px 10px 10px 0;
+}
+
+#about-us .right-content button {
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin: 10px 0;
 }
 
 /* banner section */
 #banner {
     background-color: var(--primary-color);
-    padding: 50px 20px;
-
-    /* debug */
-    height: 80vh;
+    padding: 30px 20px;
 }
 
 #banner .container {
     width: 40%;
     margin: 0 auto;
     height: 100%;
+    text-align: center;
+    color: white;
+}
 
-    /* debug */
-    background-color: orange;
+#banner .top-title {
+    color: rgba(255, 255, 255, 0.604);
+    font-size: .9rem;
+    padding-bottom: 20px;
+}
+
+#banner h3 {
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+#banner h2 {
+    font-size: 4rem;
+    color: #FDC15F;
+    padding-bottom: 20px;
+}
+
+#banner p {
+    font-size: var(--small-text);
+    padding: 0 20px;
+}
+
+#banner button {
+    border: none;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 15px 40px;
+    border-radius: 30px;
+    margin: 30px 0;
+}
+
+#banner .copyright {
+    font-size: var(--small-text);
+}
+
+#banner .copyright a {
+    color: white;
 }
 
 /* *FOOTER */
@@ -303,16 +472,73 @@ ul li {
 #footer {
     background-color: #333333;
     padding: 30px 0;
-
-    /* debug */
-    height: 200px;
 }
 
 #footer .container {
     width: 30%;
     margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: var(--small-text);
+}
 
-    /* debug */
-    background-color: orange;
-    height: 100%;
+#footer p {
+    padding-bottom: 50px;
+}
+/* *MEDIAQUERY */
+
+/* tablet query */
+@media screen and (max-width: 768px) {
+
+    /* header */
+    #header nav {
+        display: none;
+    }
+
+    #header i {
+        display: block;
+    }
+
+    /* demo-app section */
+    .container {
+        width: 100%;
+    }
+
+    #demo-app .col:first-child .card-left {
+        width: 100%;
+    }
+    
+    #demo-app .col:first-child .card {
+        display: block;
+    }
+
+    /* planning section */
+    #planning .container {
+        width: 100%;
+        display: block;
+    }
+
+    #planning .card {
+        width: 100%;
+    }
+
+    /* benefits section */
+    #benefits .col {
+        width: calc(100% / 2);
+    }
+
+    /* banner section */
+    #banner .container {
+        width: 100%;
+    }
+
+    /* footer */
+    #footer .container {
+        width: 100%;
+    }
+}
+
+/* mobile query */
+@media screen and (max-width: 480px) {
+    
 }
