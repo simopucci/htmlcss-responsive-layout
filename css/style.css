@@ -26,8 +26,7 @@ body {
 }
 
 img {
-    width: 100%;
-    display: block;
+    max-width: 100%;
 }
 
 ul {
@@ -126,6 +125,13 @@ ul li {
     width: 50%;
 }
 
+#demo-app .col:first-child .card-right {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    max-height: 300px;
+}
+
 #demo-app .col:first-child .card-left h2 {
     font-size: var(--card-title);
     color: var(--secondary-color);
@@ -149,7 +155,7 @@ ul li {
 }
 
 #demo-app .col:first-child .card-right img {
-    height: 100%;
+    max-height: 300px
 }
 
 #demo-app .col:first-child .card-left {
@@ -181,8 +187,6 @@ ul li {
     font-size: var(--small-text);
     font-weight: bold;
     line-height: 20px;
-    padding: 10px;
-
 }
 
 /* planning section */
@@ -503,7 +507,8 @@ ul li {
         width: 100%;
     }
 
-    #demo-app .col:first-child .card-left {
+    #demo-app .col:first-child .card-left,
+    #demo-app .col:first-child .card-right {
         width: 100%;
     }
     
